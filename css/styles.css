@@ -325,8 +325,10 @@ p {
 }
 
 .form-title {
+  display: inline-flex;
   margin-bottom: 12px;
 
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -409,10 +411,7 @@ p {
 }
 
 .form-checkbox {
-  appearance: none;
   position: absolute;
-
-  /* position: absolute;
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -421,11 +420,7 @@ p {
   padding: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  margin: -1px; */
-}
-
-label {
-  outline: 1px solid green;
+  margin: -1px;
 }
 
 .checkbox-action {
@@ -818,6 +813,74 @@ label {
 .social-thumb .icon {
   fill: var(--other-txt-color);
 }
+
+.footer-form-thumb {
+  margin-left: 93px;
+}
+
+.footer-preform {
+  display: inline-flex;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--other-txt-color);
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 10px 28px;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  color: var(--other-txt-color);
+  background-color: var(--primary-herobtn-bgc);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-icon {
+  margin-left: 10px;
+  fill: var(--other-txt-color);
+}
+
+.footer-btn-send:hover,
+.footer-btn-send:focus {
+  background-color: var(--accept-herobtn-bgc);
+}
+
 /* portfolio */
 /* work filter */
 .works.section {
@@ -896,7 +959,7 @@ label {
 
   outline: 1px solid tomato;
 
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wk-list .link {
